@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solaro, Brand Identity Case Study | Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="A comprehensive brand identity case study for Solaro, showcasing solar-powered electric vehicle brand architecture, geometric monogram craft, custom typography, chromatic systems, and physical merchandise.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">
+      <span>VIEW PORTFOLIO</span>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- ========================================================================
+       Main Case Study Content (Editorial Lookbook Rhythm)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper" id="main-content">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 04 of 05</span>
+          <span class="case-study-category-badge">Branding</span>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           Block 1: Hero Showcase
+           Hero Image: SolaroBanner.jpg
+           ==================================================================== -->
+      <div class="lookbook-frame-wide reveal-on-scroll" id="overview">
+        <img src="public/assets/projects/solaro/SolaroBanner.jpg" alt="Solaro Solar-Powered Electric Vehicles Brand Identity Hero Banner Showcase" class="case-study-hero-img">
+      </div>
+
+      <!-- ====================================================================
+           Block 2: Solaro, Brand Identity & Solar Geometry
+           Image 1: Solaro-LogoCover.jpg
+           Image 2: Solaro-3.jpg
+           Image 3: Solaro-4.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-01" aria-label="Solaro Introduction">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h1 class="lookbook-title">Solaro</h1>
+          <p class="lookbook-desc">
+            Solaro is revolutionizing the automotive industry with groundbreaking solar-powered electric vehicles. They are not just building cars; they are building a sustainable future where driving is powered by the sun. Solaro invites drivers to explore innovative technology and discover the freedom of never having to plug in.
+          </p>
+          <p class="lookbook-desc">
+            The brief demanded creating the total branding package. This required crafting an appropriate brand name, engineering a consistent visual identity system, and designing a striking, iconic logo mark that captures both celestial solar power and clean kinetic speed.
+          </p>
+        </header>
+
+        <!-- 2-Column Side-by-Side Frames (Images 1 & 2: Primary Mark & Type Specimen) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/solaro/Solaro-LogoCover.jpg" alt="Solaro primary brandmark featuring kinetic solar S-curve symbol in radiant yellow on midnight graphite background" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/solaro/Solaro-3.jpg" alt="Solaro bespoke typography specimen sheet displaying Etna display headline font and Poppins subhead font on solar flare yellow" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Full-Width Chromatic Hierarchy Frame (Image 3: Color Palette System) -->
+        <div class="lookbook-frame-square-center">
+          <img src="public/assets/projects/solaro/Solaro-4.jpg" alt="Solaro chromatic identity system specifications featuring Midnight Graphite, Solar Flare Yellow, Golden Current, and Sunlit Cream" loading="lazy">
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 3: Monogram Anatomy, Standards & Corporate Gear
+           Image 4: Solaro-2.jpg
+           Image 5: Solaro-1.jpg
+           Image 6: shirt-mockup_5-(solaro).jpg
+           Image 7: ENVELOPE-MOCKUP.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-02" aria-label="Monogram Anatomy and Specifications">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Monogram Anatomy & System Specs</h2>
+          <p class="lookbook-desc">
+            The Solaro emblem merges aerodynamic velocity with solar geometric radiation. Built on an intricate grid of tangential arcs and acute lightning facets, the mark retains immediate silhouette recognition from roadside billboards down to digital dashboard clusters.
+          </p>
+          <p class="lookbook-desc">
+            Rigorous reproduction standards govern full color, one color, and reversed treatments across high-contrast dark and light substrates, guaranteeing flawless fidelity across every industrial manufacturing application.
+          </p>
+        </header>
+
+        <!-- 2-Column Side-by-Side Frames (Images 4 & 5: Geometric Anatomy & Reproduction Standards) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/solaro/Solaro-2.jpg" alt="Solaro geometric construction grid, bezier curve anatomy, and angular precision guidelines for the solar monogram" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/solaro/Solaro-1.jpg" alt="Solaro logo reproduction standards showing full color, single color black, and reversed white applications" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 2-Column Side-by-Side Landscape Frames (Images 6 & 7: Branded Apparel & Stationery Suite) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-landscape">
+            <img src="public/assets/projects/solaro/shirt-mockup_5-(solaro).jpg" alt="Solaro executive teamwear featuring embroidered emblem on charcoal athletic apparel" loading="lazy">
+          </div>
+          <div class="lookbook-frame-landscape">
+            <img src="public/assets/projects/solaro/ENVELOPE-MOCKUP.jpg" alt="Solaro corporate stationery suite with debossed logo envelopes and solar yellow accents" loading="lazy">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 4: Architectural Presence & Lifestyle Collateral
+           Image 8: Solaro-big-building-sign.jpg
+           Image 9: Key-Card-mockup.jpg
+           Image 10: whiskey-Mock-up.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-03" aria-label="Architectural Scale and Lifestyle Touchpoints">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Architectural Scale & Lifestyle Touchpoints</h2>
+          <p class="lookbook-desc">
+            From the glass and steel architecture of Solaro headquarters to tactile vehicle ownership artefacts, the identity establishes a commanding luxury presence. Minimalist NFC keycards replace traditional keys with effortless digital elegance, while bespoke celebratory gifts commemorate milestone vehicle deliveries.
+          </p>
+        </header>
+
+        <!-- Full-Width Widescreen Signage Frame (Image 8: HQ Blade Sign) -->
+        <div class="lookbook-frame-wide">
+          <img src="public/assets/projects/solaro/Solaro-big-building-sign.jpg" alt="Solaro headquarters exterior architectural blade sign illuminated against modern glass facade" loading="lazy">
+        </div>
+
+        <!-- 2-Column Side-by-Side Landscape Frames (Images 9 & 10: Smart Keycard & Whiskey Reserve) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-landscape">
+            <img src="public/assets/projects/solaro/Key-Card-mockup.jpg" alt="Solaro digital NFC vehicle entry smart keycard with matte charcoal finish and gold foil accents" loading="lazy">
+          </div>
+          <div class="lookbook-frame-landscape">
+            <img src="public/assets/projects/solaro/whiskey-Mock-up.jpg" alt="Solaro Reserve bespoke celebratory whiskey packaging with embossed metallic crest" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Offset Narrative Commentary Under Grid -->
+        <div class="lookbook-narrative-split">
+          <div class="lookbook-narrative-col">
+            <p class="lookbook-narrative-p">
+              The Solaro visual language balances advanced solar engineering with timeless automotive prestige. The lightning solar motif conveys endless clean energy, unconstrained mobility, and technological optimism.
+            </p>
+            <p class="lookbook-narrative-p">
+              By pairing intense Solar Flare Yellow with deep Midnight Graphite and architectural typography, the brand stands apart from generic electric vehicle tropes, establishing an iconic aesthetic that leads the post-fossil era.
+            </p>
+            <p class="lookbook-narrative-p">
+              From the aerodynamic curvature of the chassis to the physical touch of the smart keycard, Solaro turns every journey into an inspiring celebration of sunlight and speed.
+            </p>
+          </div>
+        </div>
+
+        <!-- Minimal Pagination Navigation Row -->
+        <div class="lookbook-nav-links">
+          <a href="oyscreative.html" class="lookbook-nav-link" aria-label="Navigate to next project: OYS Creative">
+            <span>Next Project: OYS Creative</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Sticky Floating Chapter Tracker HUD (Exhibition Navigator)
+           ==================================================================== -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">Solaro Brand Identity</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Solar Identity</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">Monogram & Specs</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">Architecture & Gear</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

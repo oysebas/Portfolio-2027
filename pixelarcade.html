@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Arcade, Brand Identity Case Study | Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="An editorial brand identity case study for Pixel Arcade. Reimagining the game database as a retro-inspired, gamified social experience with bold modular iconography and mobile interfaces.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       Case Study Main Content (Editorial Lookbook Rhythm)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 03 of 05</span>
+          <span class="case-study-category-badge">Branding</span>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           Block 1: Hero Showcase
+           Image 1: PA-thumbnail.jpg
+           ==================================================================== -->
+      <div class="lookbook-frame-wide reveal-on-scroll" id="overview">
+        <img src="public/assets/projects/pixelarcade/PA-thumbnail.jpg" alt="Pixel Arcade Brand Identity Hero Banner Showcase" class="case-study-hero-img">
+      </div>
+
+      <!-- ====================================================================
+           Block 2: Pixel Arcade, Brand & Gamified Hub
+           Image 2: Thumbnail-PixelArcade.jpg
+           Image 3: PixelArcade-4.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-01" aria-label="Pixel Arcade Introduction">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h1 class="lookbook-title">Pixel Arcade</h1>
+          <p class="lookbook-desc">
+            Conceived as the ultimate digital hub, Pixel Arcade reimagines the game database as a vibrant, gamified social experience. Built for gamers by gamers, the platform bridges the gap between an essential utility tool and an electric retro-inspired community, turning game reviews, ratings, and catalog exploration into earned XP.
+          </p>
+          <p class="lookbook-desc">
+            The mission was to craft the total branding package, including strategic naming, a consistent modular visual system, and an unmistakable primary logo calibrated for both physical arcade nostalgia and modern mobile interfaces.
+          </p>
+        </header>
+
+        <!-- 2-Column Side-by-Side Frames (Images 2 & 3: Primary Icon Mark & Identity System) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/pixelarcade/Thumbnail-PixelArcade.jpg" alt="Pixel Arcade primary logomark displaying stylized retro arcade cabinet emblem in vivid magenta and electric violet" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/pixelarcade/PixelArcade-4.jpg" alt="Pixel Arcade brand system specifications displaying geometric grid construction and high-contrast dark canvas lockups" loading="lazy">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 3: Logomark Craft & Typographic Energy
+           Image 4: PixelArcade-3.jpg
+           Image 5: PixelArcade-1.jpg
+           Image 6: PixelArcade-2.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-02" aria-label="Logomark Craft and Typography">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Logomark Craft & Typographic Energy</h2>
+          <p class="lookbook-desc">
+            Drawing inspiration from 16-bit pixel geometry and classic arcade cabinet marquees, the visual language utilizes bold angles, squared counters, and high-energy neon contrasts. The resulting typography balances dynamic motion with razor-sharp readability.
+          </p>
+        </header>
+
+        <!-- Landscape Showcase Frame (Image 4: Wordmark and Typography Lockup) -->
+        <div class="lookbook-frame-landscape">
+          <img src="public/assets/projects/pixelarcade/PixelArcade-3.jpg" alt="Pixel Arcade bespoke typography specimen and horizontal brand lockup" loading="lazy">
+        </div>
+
+        <!-- 2-Column Side-by-Side Frames (Images 5 & 6: Emblem Variations & Chromatic Palette) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/pixelarcade/PixelArcade-1.jpg" alt="Pixel Arcade primary brand mark variations across obsidian black and illuminated neon surfaces" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/pixelarcade/PixelArcade-2.jpg" alt="Pixel Arcade chromatic hierarchy and secondary typographic seals" loading="lazy">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 4: Retro-Inspired System & Mobile Interface
+           Image 7: PixelArcade-5.jpg
+           Image 8: Phone-Mockup.jpg
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-03" aria-label="Retro System and Mobile Experience">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Retro-Inspired System & Mobile Experience</h2>
+          <p class="lookbook-desc">
+            A community platform built for modern gamers must live and breathe on handheld screens. The visual architecture transitions smoothly from high-impact marketing collateral to compact, tactile mobile app UI components without sacrificing energy or clarity.
+          </p>
+        </header>
+
+        <!-- Centered Square System Frame (Image 7: Collateral and Seal System) -->
+        <div class="lookbook-frame-square-center">
+          <img src="public/assets/projects/pixelarcade/PixelArcade-5.jpg" alt="Pixel Arcade full visual system exploration with badge seals and dark-mode brand patterns" loading="lazy">
+        </div>
+
+        <!-- Full-Width Landscape Frame (Image 8: Smartphone Mobile App Mockup) -->
+        <div class="lookbook-frame-landscape">
+          <img src="public/assets/projects/pixelarcade/Phone-Mockup.jpg" alt="Pixel Arcade mobile app interface running on smartphone showing game database discovery feed and user ratings" loading="lazy">
+        </div>
+
+        <!-- Offset Narrative Commentary Under Wide Image -->
+        <div class="lookbook-narrative-split">
+          <div class="lookbook-narrative-col">
+            <p class="lookbook-narrative-p">
+              Pixel Arcade transforms game cataloging from a sterile utility chore into an interactive quest loop. Every review authored, rating logged, and backlog title discovered yields immediate tactile feedback through luminous XP badges and community milestones.
+            </p>
+            <p class="lookbook-narrative-p">
+              The high-contrast color scheme, pairing deep onyx night with vibrant magenta and radiant violet, honors golden-era arcade culture while feeling thoroughly native to modern OLED mobile displays.
+            </p>
+            <p class="lookbook-narrative-p">
+              By combining nostalgic joy with contemporary product design precision, the Pixel Arcade identity invites players to level up their gaming journey together.
+            </p>
+          </div>
+        </div>
+
+        <!-- Minimal Pagination Navigation Row -->
+        <div class="lookbook-nav-links">
+          <a href="solaro.html" class="lookbook-nav-link" aria-label="Navigate to next project: Solaro">
+            <span>Next Project: Solaro</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Sticky Floating Chapter Tracker HUD (Exhibition Navigator)
+           ==================================================================== -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">Pixel Arcade Branding</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Brand & System</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">Mark & Typography</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">Mobile & Experience</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

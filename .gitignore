@@ -1,0 +1,8 @@
+# macOS System & Volume Metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files & logs
+*.log

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShipTection, E-commerce Website Revamp | UI/UX Case Study | Sebastian Cueto</title>
+  <meta name="description" content="A conversion-focused UI/UX redesign and design system for ShipTection by Sebastian Cueto (OYS Creative). Transforming e-commerce shipping protection into an authoritative B2B revenue driver.">
+  
+  <!-- Typography (Mandatory Fonts: Hammersmith One & Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="public/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">
+      <span>VIEW PORTFOLIO</span>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       Main Case Study Content (ShipTection Website Revamp)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper" id="main-content">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 09 of 12</span>
+          <span class="case-study-category-badge">Web Design</span>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           Block 1: Hero Showcase & Project Overview
+           ==================================================================== -->
+      <section class="shiptection-hero-wrap reveal-on-scroll" id="overview" aria-label="Project Overview">
+        
+        <div class="shiptection-hero-header">
+          <h1 class="shiptection-hero-title">ShipTection Website Revamp</h1>
+
+          <p class="shiptection-hero-desc">
+            A conversion-focused UI/UX redesign and modular design system engineered to turn post-purchase shipping friction into an authoritative B2B revenue driver for Shopify merchants.
+          </p>
+        </div>
+
+        <!-- Hero Mockup Showcase Frame -->
+        <div class="shiptection-hero-mockup-frame">
+          <img 
+            src="public/assets/projects/shiptection/ShipTection Laptop & Phone Mockup-2.jpg" 
+            alt="ShipTection responsive web design displayed across MacBook Pro and iPhone screens" 
+            class="case-study-hero-img"
+            loading="eager"
+            width="3000"
+            height="2000"
+          >
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 2: The Problem & The Strategic Solution
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-01" aria-label="Strategic Foundations">
+        
+        <header class="lookbook-header">
+          <span class="ad-kicker-badge">
+            <span class="ad-pulse-dot" aria-hidden="true"></span>
+            01 / STRATEGIC FOUNDATIONS
+          </span>
+          <h2 class="lookbook-title">From Friction to Conversion</h2>
+          <p class="lookbook-desc">
+            Aligning merchant acquisition incentives with seamless customer protection to drive measurable pipeline growth.
+          </p>
+        </header>
+
+        <div class="shiptection-strategy-grid">
+          
+          <!-- The Problem Card -->
+          <article class="shiptection-strategy-card problem-card">
+            <div class="shiptection-card-header">
+              <span class="shiptection-kicker problem">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                The Challenge
+              </span>
+            </div>
+            <h3 class="shiptection-card-title">Low Trust &amp; Conversion Drop-Off</h3>
+            <p class="shiptection-card-p">
+              The original platform suffered from an unfocused value proposition and fragmented narrative flow. Without clear B2B conversion pathways or prominent calls to action, Shopify merchants struggled to understand the platform's core financial upside: turning post-purchase shipping friction into automated revenue. Uncalibrated visual assets and dense copy created cognitive fatigue, driving high bounce rates and stalling qualified merchant demo bookings.
+            </p>
+          </article>
+
+          <!-- The Solution Card -->
+          <article class="shiptection-strategy-card solution-card">
+            <div class="shiptection-card-header">
+              <span class="shiptection-kicker solution">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                The Solution
+              </span>
+            </div>
+            <h3 class="shiptection-card-title">Brand Authority &amp; Conversion Flow</h3>
+            <p class="shiptection-card-p">
+              Engineered a high-fidelity B2B web experience grounded in speed, credibility, and conversion ergonomics. Replaced low-resolution graphics with crisp vector iconography, established a modular typographic hierarchy, and integrated persistent conversion anchors across the sticky header and hero fold. An interactive 5-step onboarding walkthrough and prominent merchant social proof guide users seamlessly toward demo bookings and app installations.
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 3: Before & After Comparative Analysis
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-02" aria-label="Before & After Exhibition">
+        
+        <header class="lookbook-header">
+          <span class="ad-kicker-badge">
+            <span class="ad-pulse-dot" aria-hidden="true"></span>
+            02 / COMPARATIVE ANALYSIS
+          </span>
+          <h2 class="lookbook-title">Before &amp; After Exhibition</h2>
+          <p class="lookbook-desc">
+            A direct contrast highlighting structural improvements, cognitive clarity, and conversion mechanics between the legacy platform and the redesigned experience.
+          </p>
+        </header>
+
+        <div class="shiptection-compare-grid">
+          
+          <!-- Card: Before (Legacy Experience) -->
+          <article class="shiptection-compare-card">
+            <div class="shiptection-compare-bar">
+              <span class="shiptection-compare-tag before">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                </svg>
+                Before // Legacy Site
+              </span>
+              <span class="shiptection-compare-state">Cluttered &amp; Passive</span>
+            </div>
+
+            <div class="shiptection-compare-img-box">
+              <img 
+                src="public/assets/projects/shiptection/ShippingProtection-LandingPage-Before.jpg" 
+                alt="Legacy ShipTection landing page exhibiting weak CTA placement and cluttered imagery" 
+                loading="lazy"
+                width="2048"
+                height="2048"
+              >
+            </div>
+
+            <div class="shiptection-compare-details">
+              <h3 class="shiptection-compare-heading">Identified Friction Points</h3>
+              <ul class="shiptection-compare-list">
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E76F51" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                  <span><strong>Vague Positioning:</strong> "Shipping Issues?" framed the service as a reactive consumer problem rather than a merchant revenue driver.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E76F51" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                  <span><strong>Missing CTAs:</strong> Zero calls to action in the header or hero fold left visitors without a clear path forward.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E76F51" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                  <span><strong>Zero Social Proof:</strong> No merchant partner logos or trust credentials above the fold to validate adoption.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E76F51" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                  <span><strong>Visual Clutter:</strong> Uncalibrated device graphics and fragmented imagery weakened overall brand credibility.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card: After (Redesigned Experience) -->
+          <article class="shiptection-compare-card">
+            <div class="shiptection-compare-bar">
+              <span class="shiptection-compare-tag after">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                After // Redesigned Site
+              </span>
+              <span class="shiptection-compare-state">Focused &amp; Action-Driven</span>
+            </div>
+
+            <div class="shiptection-compare-img-box">
+              <img 
+                src="public/assets/projects/shiptection/ShippingProtection-LandingPage-After.jpg" 
+                alt="Redesigned ShipTection landing page with clear CTA hierarchy and modern layout" 
+                loading="lazy"
+                width="2048"
+                height="2048"
+              >
+            </div>
+
+            <div class="shiptection-compare-details">
+              <h3 class="shiptection-compare-heading">Engineered UX Solutions</h3>
+              <ul class="shiptection-compare-list">
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DBA6F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Targeted B2B Value Prop:</strong> Authoritative headline speaking directly to modern e-commerce merchants.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DBA6F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Persistent Dual CTAs:</strong> High-visibility "Book A Demo" and "How It Works" anchors in the header and hero.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DBA6F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Instant Social Proof:</strong> Dedicated "Trusted By" marquee showcasing validated Shopify merchant brands.</span>
+                </li>
+                <li class="shiptection-compare-item">
+                  <span class="shiptection-compare-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DBA6F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>5-Step Guided Onboarding:</strong> Interactive progressive tabs clearly mapping app installation to automated claims.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 4: Wireframes & Information Architecture
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-03" aria-label="Information Architecture">
+        
+        <header class="lookbook-header">
+          <span class="ad-kicker-badge">
+            <span class="ad-pulse-dot" aria-hidden="true"></span>
+            03 / INFORMATION ARCHITECTURE
+          </span>
+          <h2 class="lookbook-title">Blueprint &amp; User Journey Mapping</h2>
+          <p class="lookbook-desc">
+            Establishing intuitive navigation architecture, persona segregation, and conversion pathways across six core site destinations before high-fidelity visual styling.
+          </p>
+        </header>
+
+        <!-- Wide Wireframe Showcase Frame -->
+        <div class="shiptection-wireframe-frame">
+          <img 
+            src="public/assets/projects/shiptection/Shiptection wireframes.png" 
+            alt="ShipTection structural wireframes mapping user flows across Homepage, Merchant ROI, Claims Processing, and FAQs" 
+            class="shiptection-wireframe-img"
+            loading="lazy"
+            width="1055"
+            height="985"
+          >
+        </div>
+
+        <!-- 3-Column Wireframe Architecture Insights -->
+        <div class="shiptection-insights-grid">
+          
+          <div class="shiptection-insight-card">
+            <span class="shiptection-insight-num">01 / Persona Segregation</span>
+            <h3 class="shiptection-insight-title">Dual Audience Pathways</h3>
+            <p class="shiptection-insight-text">
+              Separated merchant acquisition flows from end-consumer claims processing. Merchants get immediate ROI data and demo funnels; shoppers receive a frictionless claim filing interface without cluttering the B2B marketing journey.
+            </p>
+          </div>
+
+          <div class="shiptection-insight-card">
+            <span class="shiptection-insight-num">02 / Persistent Wayfinding</span>
+            <h3 class="shiptection-insight-title">Sticky Navigation Core</h3>
+            <p class="shiptection-insight-text">
+              Engineered a fixed header and anchored sub-navigation that keeps essential touchpoints (Shopify App installation, merchant portal, claim filing, and demo requests) accessible across all scroll depths.
+            </p>
+          </div>
+
+          <div class="shiptection-insight-card">
+            <span class="shiptection-insight-num">03 / Modular Taxonomy</span>
+            <h3 class="shiptection-insight-title">Scalable Component Blocks</h3>
+            <p class="shiptection-insight-text">
+              Standardized reusable content modules across the homepage and merchant landing pages, including dynamic revenue share calculators, 3-pillar benefit cards, and searchable FAQ accordions.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 5: Why It Works (6 Core Conversion Pillars)
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-04" aria-label="Design Rationale">
+        
+        <header class="lookbook-header">
+          <span class="ad-kicker-badge">
+            <span class="ad-pulse-dot" aria-hidden="true"></span>
+            04 / DESIGN RATIONALE
+          </span>
+          <h2 class="lookbook-title">Why It Works: The 6 Conversion Pillars</h2>
+          <p class="lookbook-desc">
+            Strategic UI and UX principles engineered to reduce cognitive friction, establish instant merchant authority, and accelerate app adoption.
+          </p>
+        </header>
+
+        <div class="shiptection-pillars-grid">
+          
+          <!-- Pillar 01 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 01
+            </span>
+            <h3 class="shiptection-pillar-title">Strategic CTA Placement</h3>
+            <p class="shiptection-pillar-p">
+              "Book A Demo" and "How It Works" actions are persistently visible across the sticky navbar and hero fold, ensuring merchants can initiate onboarding the exact second purchase intent peaks.
+            </p>
+          </article>
+
+          <!-- Pillar 02 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 02
+            </span>
+            <h3 class="shiptection-pillar-title">Sticky Navigation Core</h3>
+            <p class="shiptection-pillar-p">
+              The fixed glass header keeps essential tools at arm's reach. Direct Shopify app store access, merchant claims management, and demo scheduling remain fluid across the entire browsing journey.
+            </p>
+          </article>
+
+          <!-- Pillar 03 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 03
+            </span>
+            <h3 class="shiptection-pillar-title">Scannable Hierarchy</h3>
+            <p class="shiptection-pillar-p">
+              High-contrast display typography paired with structured section taxonomies ("Why ShipTection?", "How It Works") allows time-constrained e-commerce directors to digest core value in under 5 seconds.
+            </p>
+          </article>
+
+          <!-- Pillar 04 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 04
+            </span>
+            <h3 class="shiptection-pillar-title">Intentional Negative Space</h3>
+            <p class="shiptection-pillar-p">
+              A balanced purple-on-neutral palette and generous whitespace eliminate cognitive fatigue, allowing key revenue numbers, partner badges, and primary action buttons to stand out without distraction.
+            </p>
+          </article>
+
+          <!-- Pillar 05 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 05
+            </span>
+            <h3 class="shiptection-pillar-title">Progressive Flow &amp; Focus</h3>
+            <p class="shiptection-pillar-p">
+              Interactive tabbed walkthroughs for onboarding and transparent side-by-side merchant pricing keep users immersed on a single canvas, eliminating tedious multi-page navigation.
+            </p>
+          </article>
+
+          <!-- Pillar 06 -->
+          <article class="shiptection-pillar-card">
+            <span class="shiptection-pillar-badge">
+              <span class="shiptection-pillar-dot" aria-hidden="true"></span>
+              Pillar 06
+            </span>
+            <h3 class="shiptection-pillar-title">Mobile-First Parity</h3>
+            <p class="shiptection-pillar-p">
+              Engineered from the ground up for mobile viewports. Thumb-accessible touch targets, responsive drawer navigation, and clean vertical stacking ensure a frictionless experience on handheld devices.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Project Pagination Navigation Row -->
+        <div class="lookbook-nav-links">
+          <a href="edible.html" class="lookbook-nav-link" aria-label="Navigate to previous project: Edible Arrangements Redesign">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span>Previous: Edible Arrangements</span>
+          </a>
+
+          <a href="fellow.html" class="lookbook-nav-link" aria-label="Navigate to next project: Fellow Product Email Design">
+            <span>Next: Fellow Email Campaign</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Sticky Floating Chapter Tracker HUD (Exhibition Navigator)
+           ==================================================================== -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">ShipTection Revamp</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Problem &amp; Solution</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">Before &amp; After</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">Wireframe IA</span></a></li>
+            <li><a href="#chapter-04" class="nav-hud-item" data-chapter="04"><span class="item-num">04</span> <span class="item-label">Conversion Pillars</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

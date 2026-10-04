@@ -1,0 +1,47 @@
+<!-- ========================================================================
+     Floating Liquid Glass Header (Reusable Component)
+     ======================================================================== -->
+<header class="site-header" role="banner">
+  <div class="nav-container">
+    
+    <!-- Left: Brand Logo Mark -->
+    <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+      <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+    </a>
+
+    <!-- Center: Liquid Glass Nav Capsule -->
+    <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+      <ul class="nav-links-list">
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right: Coral Gradient CTA -->
+    <div class="nav-actions">
+      <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+        <span>VIEW PORTFOLIO</span>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile Dropdown Drawer -->
+<div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="about.html" class="nav-link">About Me</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+</div>

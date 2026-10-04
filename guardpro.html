@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guard Pro, Brand Identity Case Study | Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="An editorial brand identity case study for Guard Pro. Showcasing architectural signage, bespoke typeface design, process craft, and tactile tournament collateral.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       Case Study Main Content (Editorial Lookbook Rhythm)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 02 of 05</span>
+          <span class="case-study-category-badge">Branding</span>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           Block 1: Hero Showcase
+           ==================================================================== -->
+      <div class="lookbook-frame-wide reveal-on-scroll" id="overview">
+        <img src="public/assets/projects/guardpro/01-hero-banner.jpg" alt="GuardPro Table Tennis Brand Identity Hero Showcase" class="case-study-hero-img">
+      </div>
+
+      <!-- ====================================================================
+           Block 2: Guard Pro, Story, Craft & Ideation
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-01" aria-label="Guard Pro Introduction">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h1 class="lookbook-title">Guard Pro</h1>
+          <p class="lookbook-desc">
+            Guard Pro was engineered to redefine table tennis equipment and performance gear for tournament athletes. Blending aerodynamic precision with high-impact defensive shielding, the brand bridges the gap between competitive agility and industrial-grade protection.
+          </p>
+        </header>
+
+        <!-- 2-Column Side-by-Side Frames (Images 1 & 2: Primary Lockup & System Architecture) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/guardpro/GuardPro-1.jpg" alt="GuardPro primary brandmark: electric blue diamond paddle shield emblem and crisp typography on obsidian black" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/guardpro/GuardPro-2.jpg" alt="GuardPro system architecture: core logo mark, primary lockup, secondary lockup, and Play Like a Pro circular seal" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Centered Square Chromatic Palette Frame (Image 3: Color Palette) -->
+        <div class="lookbook-frame-square-center">
+          <img src="public/assets/projects/guardpro/GuardPro-3.jpg" alt="GuardPro chromatic palette specifications: Guardian Blue (#0056b3), Trust Navy (#1a3263), Energy Serve (#a3e723), Net Neutral (#7f8c8d), Text on Black (#ffffff), Text on White (#0c0c0c)" loading="lazy">
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 3: Brand Identity Design, Contrast Standards & Active Uno Typeface
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-02" aria-label="Brand Identity Design & Typography">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Brand Identity & Typography</h2>
+          <p class="lookbook-desc">
+            At the core of the identity is the interlocking paddle-shield monogram, a dynamic glyph calibrated for both defensive tenacity and rapid forward attack. Backed by rigorous contrast standards and a custom athletic display typeface, the system thrives in high-speed, broadcast-lit arena environments.
+          </p>
+        </header>
+
+        <!-- 2-Column Side-by-Side Frames (Images 4 & 5: Contrast Standards & Active Uno Specimen) -->
+        <div class="lookbook-grid-2col">
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/guardpro/GuardPro-4.jpg" alt="GuardPro contrast and reproduction standards: full color, one color, and reversed on obsidian black" loading="lazy">
+          </div>
+          <div class="lookbook-frame-square">
+            <img src="public/assets/projects/guardpro/GuardPro-5.jpg" alt="Active Uno bespoke athletic typeface specimen sheet displaying glyph set and numerals on vibrant Energy Serve lime green" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Full-Width Landscape Frame (Image 6: Tournament Paddles & Balls Mockup) -->
+        <div class="lookbook-frame-landscape">
+          <img src="public/assets/projects/guardpro/MockUp1.jpg" alt="GuardPro custom tournament competition carbon paddles in matte black and neon lime with official balls on Olympic blue table" loading="lazy">
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 4: Tactical Tournament Performance, Arena Application & Strategic Depth
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-03" aria-label="Tactical Tournament Performance">
+        
+        <!-- Editorial Section Header -->
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Tactical Tournament Performance</h2>
+          <p class="lookbook-desc">
+            From tournament carbon paddles to arena-scale visual architecture, GuardPro's identity brings championship focus to life through physical materials, tactile grip textures, and razor-sharp typographic execution. Every curve and seal embodies the mantra: Play Like a Pro.
+          </p>
+        </header>
+
+        <!-- Full-Width Landscape Frame (Image 7: Competition Paddle Macro Mockup) -->
+        <div class="lookbook-frame-landscape">
+          <img src="public/assets/projects/guardpro/MockUp2.jpg" alt="Cinematic macro view of GuardPro competition table tennis paddle and tournament ball with translucent white shield emblem overlay" loading="lazy">
+        </div>
+
+        <!-- Offset Narrative Commentary Under Wide Image -->
+        <div class="lookbook-narrative-split">
+          <div class="lookbook-narrative-col">
+            <p class="lookbook-narrative-p">
+              The chromatic hierarchy of GuardPro is anchored by Guardian Blue (#0056B3) for steadfast authority and Trust Navy (#1A3263) for structural depth, energized by high-visibility Energy Serve (#A3E723) highlights that track ball trajectories in high-speed play.
+            </p>
+            <p class="lookbook-narrative-p">
+              The bespoke Active Uno typeface features forward-angled diagonals, squared internal counters, and balanced terminal weights engineered to stay razor-sharp whether micro-embossed onto rubber paddle edging or projected across arena scoreboard displays.
+            </p>
+            <p class="lookbook-narrative-p">
+              United by the signature &ldquo;Play Like a Pro&rdquo; tournament seal and interlocking paddle-shield geometry, GuardPro delivers an uncompromising visual presence for modern racket sports.
+            </p>
+          </div>
+        </div>
+
+        <!-- Minimal Pagination Navigation Row -->
+        <div class="lookbook-nav-links">
+          <a href="pixelarcade.html" class="lookbook-nav-link" aria-label="Navigate to next project: Pixel Arcade">
+            <span>Next Project: Pixel Arcade</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+
+
+      <!-- ====================================================================
+           Sticky Floating Chapter Tracker HUD (Exhibition Navigator)
+           ==================================================================== -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">Guard Pro Brand Identity</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Guard Pro</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">Identity & Type</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">Tournament Gear</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

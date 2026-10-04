@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 102" fill="none">
+  <!-- OYS Geometric Mark -->
+  <g fill="#7DBA6F">
+    <!-- Circle / Head -->
+    <circle cx="17.2" cy="17.2" r="17.2" />
+    <!-- Inverted Triangle / Torso -->
+    <polygon points="1.2,42.5 33.2,42.5 17.2,68.5" />
+    <!-- Diagonal Pillar / Stem -->
+    <polygon points="8.5,101 41.5,101 88,18 55,18" />
+    <!-- Top-Right Parallelogram / Branch -->
+    <polygon points="63.5,18 96,18 111.5,44 79,44" />
+  </g>
+</svg>

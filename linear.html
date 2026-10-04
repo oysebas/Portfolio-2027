@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear, Less Tool. More Output. | Performance Ad Design Case Study | OYS Creative</title>
+  <meta name="description" content="Direct-response static ad campaign for Linear by Sebastian Cueto (OYS Creative). Visual hierarchy, developer humor, conversion psychology, and in-feed testing.">
+  
+  <!-- Typography (Mandatory Fonts: Hammersmith One & Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">
+      <span>VIEW PORTFOLIO</span>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       Main Case Study Content (Streamlined Performance Ad Design)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper" id="main-content">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 01 of 03</span>
+          <span class="case-study-category-badge">Ad Design</span>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           Block 1: Hero & Campaign Foundation (Split Layout)
+           ==================================================================== -->
+      <section class="ad-hero-split reveal-on-scroll" id="overview" aria-label="Campaign Overview">
+        
+        <!-- Left: Lean Narrative & Focus Cards -->
+        <div class="ad-hero-content">
+          <span class="ad-hero-client">Linear</span>
+          <h1 class="ad-hero-title">Less Tool. More Output.</h1>
+
+          <p class="ad-hero-desc">
+            A direct-response static ad campaign engineered to stop the scroll, leverage developer humor, and drive frictionless software trials.
+          </p>
+
+          <div class="ad-strategy-grid">
+            <div class="ad-strategy-card">
+              <span class="ad-strategy-label">The Challenge</span>
+              <p class="ad-strategy-p">
+                Create a high-impact side-by-side comparison in a 1080×1080 square that connects emotionally without visual clutter.
+              </p>
+            </div>
+            <div class="ad-strategy-card">
+              <span class="ad-strategy-label">The Strategy</span>
+              <p class="ad-strategy-p">
+                A grayscale versus color split and relatable "Jira, probably" humor that gets builders laughing before clicking.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hero Media Frame -->
+        <div class="ad-hero-media">
+          <img src="public/assets/projects/linear/LinearOrbit-Compirason-Ad.jpg" alt="Linear, Less Tool. More Output. Primary Static Ad Creative" class="case-study-hero-img">
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 2: Creative Anatomy & Conversion Breakdown (Interactive Blueprint)
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-01" aria-label="Creative Anatomy">
+        
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Creative Anatomy</h2>
+          <p class="lookbook-desc">
+            Visual hierarchy and conversion psychology engineered to stop the scroll.
+          </p>
+        </header>
+
+        <div class="ad-anatomy-grid">
+          
+          <!-- Interactive Blueprint Frame -->
+          <div class="ad-anatomy-media" id="adBlueprint">
+            <div class="ad-blueprint-hud-tag">
+              <span class="hud-pulse-dot"></span>
+              <span>ANATOMY BLUEPRINT // 01-03</span>
+            </div>
+
+            <img src="public/assets/projects/linear/LinearOrbit-Compirason-Ad.jpg" alt="Linear Static Ad Breakdown Blueprint" id="blueprintImage" loading="lazy">
+            
+            <!-- Interactive Hotspot Markers -->
+            <div class="ad-hotspot-layer" aria-label="Interactive Breakdown Hotspots">
+              
+              <!-- Hotspot 01: The Headline (The Hook) -->
+              <button class="ad-hotspot-pin" type="button" data-hotspot="1" style="top: 22%; left: 50%;" aria-label="Inspect Point 01: Emotional Reframing">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-badge">01</span>
+                <span class="hotspot-pill-label">Emotional Hook</span>
+              </button>
+
+              <!-- Hotspot 02: Visual Split (Value Proposition) -->
+              <button class="ad-hotspot-pin" type="button" data-hotspot="2" style="top: 58%; left: 49%;" aria-label="Inspect Point 02: Visual Dichotomy">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-badge">02</span>
+                <span class="hotspot-pill-label">Visual Split</span>
+              </button>
+
+              <!-- Hotspot 03: Call to Action (Try Linear for Free) -->
+              <button class="ad-hotspot-pin" type="button" data-hotspot="3" style="top: 84%; left: 50%;" aria-label="Inspect Point 03: Zero-Friction Conversion">
+                <span class="hotspot-radar"></span>
+                <span class="hotspot-badge">03</span>
+                <span class="hotspot-pill-label">Free Trial CTA</span>
+              </button>
+
+            </div>
+
+            <div class="ad-blueprint-hint">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 16v-4M12 8h.01"/>
+              </svg>
+              <span>Tap points or cards to inspect anatomy</span>
+            </div>
+          </div>
+
+          <div class="ad-breakdown-list">
+            
+            <div class="ad-breakdown-card" data-hotspot="1" tabindex="0" role="button" aria-label="Highlight 01 The Hook">
+              <div class="ad-breakdown-header">
+                <span class="ad-breakdown-step">01</span>
+                <span class="ad-breakdown-tag">The Hook</span>
+              </div>
+              <h3 class="ad-breakdown-title">Emotional Reframing</h3>
+              <p class="ad-breakdown-p">
+                "Less Tool. More Output." reframes a product decision as an emotional release, telling burnt-out builders that Linear gets out of their way so they can actually ship.
+              </p>
+            </div>
+
+            <div class="ad-breakdown-card" data-hotspot="2" tabindex="0" role="button" aria-label="Highlight 02 Value Proposition">
+              <div class="ad-breakdown-header">
+                <span class="ad-breakdown-step">02</span>
+                <span class="ad-breakdown-tag">Value Proposition</span>
+              </div>
+              <h3 class="ad-breakdown-title">Visual Dichotomy</h3>
+              <p class="ad-breakdown-p">
+                The grayscale versus color split tells the whole story, same chaos, better tool, without needing a single word of feature copy.
+              </p>
+            </div>
+
+            <div class="ad-breakdown-card" data-hotspot="3" tabindex="0" role="button" aria-label="Highlight 03 Call to Action">
+              <div class="ad-breakdown-header">
+                <span class="ad-breakdown-step">03</span>
+                <span class="ad-breakdown-tag">Call to Action</span>
+              </div>
+              <h3 class="ad-breakdown-title">Zero-Friction Conversion</h3>
+              <p class="ad-breakdown-p">
+                "Try Linear for Free" removes adoption friction by leading with zero commitment, making the next step feel obvious rather than salesy.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 3: A/B Concepting (Interactive Segmented Switcher)
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-02" aria-label="AB Concepting and Testing">
+        
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">A/B Concepting</h2>
+          <p class="lookbook-desc">
+            Testing variables to optimize for engagement and conversion with the target demographic.
+          </p>
+        </header>
+
+        <!-- Interactive Segmented Pill Switcher -->
+        <div class="ad-ab-switcher-wrap" role="region" aria-label="A/B Variant Switcher">
+          <div class="ad-ab-switcher" role="tablist">
+            <button class="ab-tab-btn active" role="tab" id="tabVariantA" aria-selected="true" aria-controls="panelVariantA" data-variant="a">
+              <span class="ab-tab-dot version-a"></span>
+              <span>Version A: Comparison</span>
+            </button>
+            <button class="ab-tab-btn" role="tab" id="tabVariantB" aria-selected="false" aria-controls="panelVariantB" data-variant="b">
+              <span class="ab-tab-dot version-b"></span>
+              <span>Version B: Minimalist</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ad-ab-grid" id="abGrid">
+          
+          <div class="ad-ab-card is-active" id="panelVariantA" role="tabpanel" aria-labelledby="tabVariantA" data-variant="a">
+            <div class="ad-ab-media">
+              <img src="public/assets/projects/linear/LinearOrbit-Compirason-Ad.jpg" alt="Version A: Emotional Lifestyle Connection" loading="lazy">
+            </div>
+            <div class="ad-ab-info">
+              <div class="ad-ab-badge-row">
+                <span class="ad-ab-badge version-a">Version A</span>
+              </div>
+              <h3 class="ad-ab-title">Emotional Lifestyle Connection</h3>
+              <p class="ad-ab-desc">
+                Uses humor and a side-by-side comparison to make the benefit instantly relatable. The illustrated characters and grayscale versus color contrast let builders see themselves in the story.
+              </p>
+            </div>
+          </div>
+
+          <div class="ad-ab-card" id="panelVariantB" role="tabpanel" aria-labelledby="tabVariantB" data-variant="b">
+            <div class="ad-ab-media">
+              <img src="public/assets/projects/linear/LinearOrbit-Feature-Ad.jpg" alt="Version B: Premium Minimalist Authority" loading="lazy">
+            </div>
+            <div class="ad-ab-info">
+              <div class="ad-ab-badge-row">
+                <span class="ad-ab-badge version-b">Version B</span>
+              </div>
+              <h3 class="ad-ab-title">Premium Minimalist Authority</h3>
+              <p class="ad-ab-desc">
+                Leads with a 3D render of ⌘K, Linear's command center, communicating speed and keyboard-first precision directly for engineers who already know what they want.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Block 4: Context is King (In-Feed Simulation)
+           ==================================================================== -->
+      <section class="lookbook-section reveal-on-scroll" id="chapter-03" aria-label="Context is King In-Feed Environment">
+        
+        <header class="lookbook-header">
+          <h2 class="lookbook-title">Context is King</h2>
+          <p class="lookbook-desc">
+            The ad in its natural habitat, competing for attention in a fast-scrolling social feed.
+          </p>
+        </header>
+
+        <div class="ad-feed-showcase">
+          
+          <div class="ad-feed-mockup-wrapper">
+            <img src="public/assets/projects/linear/Linear-FacebookAdMockup.png" alt="Linear Facebook Feed Ad Mockup" class="ad-feed-mockup-img" loading="lazy">
+          </div>
+
+          <div class="ad-feed-insights">
+            
+            <div class="ad-feed-insight-card">
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <span>High-Contrast Feed Stopping</span>
+              </h3>
+              <p>
+                Dark canvas and punchy white typography create immediate visual distinction against busy social timelines.
+              </p>
+            </div>
+
+            <div class="ad-feed-insight-card">
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-sage)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Instant Narrative Delivery</span>
+              </h3>
+              <p>
+                The split illustration registers within 300 milliseconds, conveying the before-and-after punchline before thumb scroll.
+              </p>
+            </div>
+
+            <div class="ad-feed-insight-card">
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-coral)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Native Product Polish</span>
+              </h3>
+              <p>
+                Clean software branding and authentic developer humor build brand credibility and lower acquisition cost.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Minimal Pagination Navigation Row -->
+        <div class="lookbook-nav-links">
+          <a href="ouraring.html" class="lookbook-nav-link" aria-label="Navigate to next project: The Smart Ring That Does It All">
+            <span>Next Project: The Smart Ring That Does It All</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           Sticky Floating Chapter Tracker HUD (Exhibition Navigator)
+           ==================================================================== -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">Linear Ad Campaign</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Creative Anatomy</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">A/B Concepting</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">In-Feed Context</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OYS Creative, Portfolio 2027</title>
+  <meta name="description" content="Editorial portfolio for OYS Creative. Tactile dark-mode design, bold typography, and liquid glass craftsmanship.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Atmospheric Background Canvas (Concept 1: Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule (Options: Projects, About Me, Contact) -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">
+      <span>VIEW PORTFOLIO</span>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      
+      <!-- Monumental Screen-Filling Display Headline -->
+      <h1 class="hero-title" aria-label="HI, I'M SEBASTIAN">
+        <span class="type-line type-line-1">HI, I'M</span>
+        <span class="type-line type-line-2">SEBASTIAN</span>
+      </h1>
+
+      <!-- Supporting Sub-headline -->
+      <p class="hero-sub-text">
+        A designer with a knack for creating visually stunning and user-friendly experiences. With more than 4+ years of experience.
+      </p>
+
+      <!-- Center CTA Button -->
+      <div class="hero-cta-wrap">
+        <a href="projects.html" class="btn-coral-gradient hero-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Horizontal Marquee Capabilities Scroller
+       ======================================================================== -->
+  <section class="marquee-section" aria-label="Capabilities Ticker">
+    <div class="marquee-track-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>BRANDING</span><span class="marquee-bullet">•</span>
+          <span>UI DESIGN</span><span class="marquee-bullet">•</span>
+          <span>EMAIL DESIGN</span><span class="marquee-bullet">•</span>
+          <span>AD DESIGN</span><span class="marquee-bullet">•</span>
+          <span>BRANDING</span><span class="marquee-bullet">•</span>
+          <span>UI DESIGN</span><span class="marquee-bullet">•</span>
+          <span>EMAIL DESIGN</span><span class="marquee-bullet">•</span>
+          <span>AD DESIGN</span><span class="marquee-bullet">•</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>BRANDING</span><span class="marquee-bullet">•</span>
+          <span>UI DESIGN</span><span class="marquee-bullet">•</span>
+          <span>EMAIL DESIGN</span><span class="marquee-bullet">•</span>
+          <span>AD DESIGN</span><span class="marquee-bullet">•</span>
+          <span>BRANDING</span><span class="marquee-bullet">•</span>
+          <span>UI DESIGN</span><span class="marquee-bullet">•</span>
+          <span>EMAIL DESIGN</span><span class="marquee-bullet">•</span>
+          <span>AD DESIGN</span><span class="marquee-bullet">•</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       What I Can Do (Concept B: Scroll-Spy Capabilities Accordion)
+       ======================================================================== -->
+  <section class="services-scroll-wrapper" id="about">
+    <div id="services" style="position: absolute; pointer-events: none;"></div>
+    <div class="services-sticky-container">
+      <div class="services-header reveal-on-scroll">
+        <div class="services-header-text">
+          <h2 class="section-title">What I <span class="highlight-accent">Can Do</span></h2>
+        </div>
+        <div class="services-header-actions">
+          <span class="services-step-counter" id="servicesStepCounter">01 / 04</span>
+          <a href="about.html" class="btn-coral-gradient services-cta-btn">
+            <span>ABOUT ME</span>
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Thin Specular Progress Track -->
+      <div class="services-progress-track" aria-hidden="true">
+        <div class="services-progress-bar" id="servicesProgressBar"></div>
+      </div>
+
+      <div class="services-list" role="tablist" aria-label="Design capabilities">
+      
+      <!-- 01. Branding (Active by default) -->
+      <div class="service-card active reveal-on-scroll" data-service="1" data-href="projects.html#branding">
+        <a href="projects.html#branding" class="service-card-header" id="service-tab-1" aria-label="View Branding Projects in Portfolio">
+          <div class="service-card-left">
+            <span class="service-number">01.</span>
+            <h3 class="service-title">Branding</h3>
+          </div>
+          <div class="service-arrow-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </div>
+        </a>
+        <div class="service-card-body" id="service-desc-1" role="region" aria-label="Branding details">
+          <div class="service-card-body-inner">
+            <p class="service-desc-text">
+              Building distinct, memorable visual identities grounded in narrative and strategic positioning, engineered to scale across all touchpoints.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02. Ad Design -->
+      <div class="service-card reveal-on-scroll" data-service="2" data-href="projects.html#ad-design">
+        <a href="projects.html#ad-design" class="service-card-header" id="service-tab-2" aria-label="View Ad Design Projects in Portfolio">
+          <div class="service-card-left">
+            <span class="service-number">02.</span>
+            <h3 class="service-title">Ad Design</h3>
+          </div>
+          <div class="service-arrow-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </div>
+        </a>
+        <div class="service-card-body" id="service-desc-2" role="region" aria-label="Ad Design details">
+          <div class="service-card-body-inner">
+            <p class="service-desc-text">
+              Crafting high-impact, scroll-stopping digital advertising assets tailored for customer acquisition, brand awareness, and conversions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03. UI/UX Design -->
+      <div class="service-card reveal-on-scroll" data-service="3" data-href="projects.html#web-design">
+        <a href="projects.html#web-design" class="service-card-header" id="service-tab-3" aria-label="View UI/UX and Web Design Projects in Portfolio">
+          <div class="service-card-left">
+            <span class="service-number">03.</span>
+            <h3 class="service-title">UI/UX Design</h3>
+          </div>
+          <div class="service-arrow-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </div>
+        </a>
+        <div class="service-card-body" id="service-desc-3" role="region" aria-label="UI/UX Design details">
+          <div class="service-card-body-inner">
+            <p class="service-desc-text">
+              Designing modern, user-friendly websites and applications focused on seamless experiences, usability, and measurable digital growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04. Email Design -->
+      <div class="service-card reveal-on-scroll" data-service="4" data-href="projects.html#email-design">
+        <a href="projects.html#email-design" class="service-card-header" id="service-tab-4" aria-label="View Email Design Projects in Portfolio">
+          <div class="service-card-left">
+            <span class="service-number">04.</span>
+            <h3 class="service-title">Email Design</h3>
+          </div>
+          <div class="service-arrow-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </div>
+        </a>
+        <div class="service-card-body" id="service-desc-4" role="region" aria-label="Email Design details">
+          <div class="service-card-body-inner">
+            <p class="service-desc-text">
+              Designing modular, high-converting email templates engineered for clean rendering across all clients, high engagement, and cohesive brand storytelling.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <!-- ========================================================================
+       Recent Projects Showcase Section (2x2 Grid)
+       ======================================================================== -->
+  <section class="recent-projects-section" id="projects">
+    <div class="projects-container">
+      
+      <!-- Section Header -->
+      <div class="projects-header reveal-on-scroll">
+        <h2 class="section-title projects-header-title">Recent Projects</h2>
+      </div>
+
+      <!-- 2 by 2 Project Showcase Grid -->
+      <div class="projects-grid-2x2">
+
+        <!-- Project 01: Fellow Product Email Design -->
+        <article class="project-showcase-card reveal-on-scroll">
+          <a href="fellow.html" class="project-showcase-media" aria-label="View Fellow Product Email Campaign Case Study">
+            <img src="public/assets/projects/fellow-email-design.jpg" alt="Fellow Product Email Design" class="project-showcase-img" loading="lazy">
+            <span class="project-showcase-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </span>
+          </a>
+          <div class="project-showcase-info">
+            <h3 class="project-showcase-title">
+              <a href="fellow.html" class="project-showcase-title-link">01. Fellow Product Email Design</a>
+            </h3>
+          </div>
+        </article>
+
+        <!-- Project 02: Less Tool. More Output. -->
+        <article class="project-showcase-card reveal-on-scroll">
+          <a href="linear.html" class="project-showcase-media" aria-label="View Less Tool. More Output. Ad Design Case Study">
+            <img src="public/assets/projects/linear-ad-design.jpg" alt="Less Tool. More Output. Ad Design" class="project-showcase-img" loading="lazy">
+            <span class="project-showcase-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </span>
+          </a>
+          <div class="project-showcase-info">
+            <h3 class="project-showcase-title">
+              <a href="linear.html" class="project-showcase-title-link">02. Less Tool. More Output.</a>
+            </h3>
+          </div>
+        </article>
+
+        <!-- Project 03: Edible Arrangements Redesign -->
+        <article class="project-showcase-card reveal-on-scroll">
+          <a href="edible.html" class="project-showcase-media" aria-label="View Edible Arrangements Brand Redesign Case Study">
+            <img src="public/assets/projects/edible-arrangements-redesign.jpg" alt="Edible Arrangements Redesign" class="project-showcase-img" loading="lazy">
+            <span class="project-showcase-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </span>
+          </a>
+          <div class="project-showcase-info">
+            <h3 class="project-showcase-title">
+              <a href="edible.html" class="project-showcase-title-link">03. Edible Arrangements Redesign</a>
+            </h3>
+          </div>
+        </article>
+
+        <!-- Project 04: ShipTection Website Revamp -->
+        <article class="project-showcase-card reveal-on-scroll">
+          <a href="shiptection.html" class="project-showcase-media" aria-label="View ShipTection Website Revamp Case Study">
+            <img src="public/assets/projects/shiptection-website-revamp.jpg" alt="ShipTection Website Revamp" class="project-showcase-img" loading="lazy">
+            <span class="project-showcase-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </span>
+          </a>
+          <div class="project-showcase-info">
+            <h3 class="project-showcase-title">
+              <a href="shiptection.html" class="project-showcase-title-link">04. ShipTection Website Revamp</a>
+            </h3>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom Centered Action Button -->
+      <div class="projects-footer-action reveal-on-scroll">
+        <a href="projects.html" class="btn-coral-gradient projects-view-all-btn">
+          <span>View All Projects</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!-- ==========================================================================
+     Portfolio 2027, Branding Case Study Master Template
+     Use this clean blueprint to generate new brand identity case studies.
+     Replace all placeholder tokens [LIKE_THIS] with your project details.
+     ========================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[PROJECT_TITLE], Brand Identity Case Study | Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="[PROJECT_META_DESCRIPTION]">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       Case Study Main Content
+       ======================================================================== -->
+  <main class="case-study-page-wrapper">
+    <div class="case-study-container">
+
+      <!-- 1. Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project [01] of [05]</span>
+          <span class="case-study-category-badge">Branding</span>
+        </div>
+      </div>
+
+      <!-- 2. Hero Banner Showcase -->
+      <div class="case-study-hero reveal-on-scroll">
+        <img src="[HERO_IMAGE_PATH]" alt="[PROJECT_TITLE] Brand Identity Banner" class="case-study-hero-img">
+      </div>
+
+      <!-- 3. Project Overview & Creative Brief -->
+      <section class="case-study-brief-grid reveal-on-scroll" id="overview" aria-label="Project Creative Brief">
+        
+        <!-- Metadata Column -->
+        <div class="case-study-brief-meta-col">
+          <h1 class="case-study-title">[PROJECT_TITLE]</h1>
+          <p class="case-study-tagline">[PROJECT_TAGLINE_OR_SUBHEAD]</p>
+          
+          <div class="case-study-meta-matrix">
+            <div class="case-study-meta-item">
+              <span class="case-study-meta-label">Client</span>
+              <span class="case-study-meta-value">[CLIENT_NAME]</span>
+            </div>
+            <div class="case-study-meta-item">
+              <span class="case-study-meta-label">Year</span>
+              <span class="case-study-meta-value">[YEAR]</span>
+            </div>
+            <div class="case-study-meta-item">
+              <span class="case-study-meta-label">Role</span>
+              <span class="case-study-meta-value">Lead Brand Designer</span>
+            </div>
+            <div class="case-study-meta-item">
+              <span class="case-study-meta-label">Discipline</span>
+              <span class="case-study-meta-value">[DISCIPLINE]</span>
+            </div>
+            <div class="case-study-meta-item full-width">
+              <span class="case-study-meta-label">Deliverables</span>
+              <span class="case-study-meta-value">[DELIVERABLES_LIST]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrative Story Card -->
+        <div class="case-study-narrative-card">
+          <div class="narrative-block">
+            <h2 class="narrative-heading">The Challenge</h2>
+            <p class="narrative-text">
+              [CHALLENGE_DESCRIPTION]
+            </p>
+          </div>
+
+          <div class="narrative-block">
+            <h2 class="narrative-heading">The Solution</h2>
+            <p class="narrative-text">
+              [SOLUTION_DESCRIPTION]
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 4. Visual Chapters & Showcase Frames -->
+
+      <!-- Chapter 01: Core Mark -->
+      <section class="case-study-section reveal-on-scroll" id="chapter-01" aria-label="Visual Identity Core Mark">
+        <header class="chapter-header">
+          <span class="chapter-kicker">01 / Visual Identity</span>
+          <h2 class="chapter-title">The Primary Brandmark</h2>
+        </header>
+        <div class="case-study-frame">
+          <img src="[CHAPTER_1_IMAGE_PATH]" alt="[PROJECT_TITLE] Primary Mark" class="case-study-frame-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Chapter 02: System Architecture -->
+      <section class="case-study-section reveal-on-scroll" id="chapter-02" aria-label="Logo System Architecture">
+        <header class="chapter-header">
+          <span class="chapter-kicker">02 / Architecture</span>
+          <h2 class="chapter-title">Logo System & Variations</h2>
+        </header>
+        <div class="case-study-frame">
+          <img src="[CHAPTER_2_IMAGE_PATH]" alt="[PROJECT_TITLE] System Architecture" class="case-study-frame-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Chapter 03 & 04: Side-by-Side Chromatics & Typography -->
+      <div class="case-study-grid-2col">
+        
+        <!-- Chapter 03: Chromatics -->
+        <section class="case-study-section reveal-on-scroll" id="chapter-03" aria-label="Color Palette">
+          <header class="chapter-header">
+            <span class="chapter-kicker">03 / Chromatics</span>
+            <h2 class="chapter-title">Color Palette</h2>
+          </header>
+          <div class="case-study-frame">
+            <img src="[CHAPTER_3_IMAGE_PATH]" alt="[PROJECT_TITLE] Color Palette" class="case-study-frame-img" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Chapter 04: Typography -->
+        <section class="case-study-section reveal-on-scroll" id="chapter-04" aria-label="Typography Foundation">
+          <header class="chapter-header">
+            <span class="chapter-kicker">04 / Typography</span>
+            <h2 class="chapter-title">Type Specimen</h2>
+          </header>
+          <div class="case-study-frame">
+            <img src="[CHAPTER_4_IMAGE_PATH]" alt="[PROJECT_TITLE] Typography" class="case-study-frame-img" loading="lazy">
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Chapter 05: Logo Usage & Guidelines -->
+      <section class="case-study-section reveal-on-scroll" id="chapter-05" aria-label="Contrast and Guidelines">
+        <header class="chapter-header">
+          <span class="chapter-kicker">05 / Guidelines</span>
+          <h2 class="chapter-title">Contrast & Usage Standards</h2>
+        </header>
+        <div class="case-study-frame">
+          <img src="[CHAPTER_5_IMAGE_PATH]" alt="[PROJECT_TITLE] Guidelines" class="case-study-frame-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Chapter 06: Lifestyle & Action Application -->
+      <section class="case-study-section reveal-on-scroll" id="chapter-06" aria-label="Brand Application in Action">
+        <header class="chapter-header">
+          <span class="chapter-kicker">06 / Application</span>
+          <h2 class="chapter-title">In-Context Application</h2>
+        </header>
+        <div class="case-study-frame">
+          <img src="[CHAPTER_6_IMAGE_PATH]" alt="[PROJECT_TITLE] Lifestyle Application" class="case-study-frame-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Chapter 07: Physical Merchandise & Gear -->
+      <section class="case-study-section reveal-on-scroll" id="chapter-07" aria-label="Physical Merchandise and Deliverables">
+        <header class="chapter-header">
+          <span class="chapter-kicker">07 / Physical Collateral</span>
+          <h2 class="chapter-title">Merchandise & Tangible Touchpoints</h2>
+        </header>
+        <div class="case-study-frame">
+          <img src="[CHAPTER_7_IMAGE_PATH]" alt="[PROJECT_TITLE] Merchandise" class="case-study-frame-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- 5. Next Project Navigation Bridge -->
+      <a href="[NEXT_PROJECT_URL]" class="next-project-card reveal-on-scroll" aria-label="Navigate to next project: [NEXT_PROJECT_TITLE]">
+        <div class="next-project-info">
+          <span class="next-project-kicker">Next Branding Project</span>
+          <h3 class="next-project-title">[NEXT_PROJECT_TITLE]</h3>
+        </div>
+        <div class="next-project-action">
+          <div class="next-project-btn-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Sticky Floating Chapter Tracker HUD (Exhibition Navigator) -->
+      <aside class="case-study-nav-hud" id="caseStudyNavHud" aria-label="Case Study Exhibition Navigator">
+        <button class="nav-hud-pill" id="navHudPill" aria-expanded="false" aria-controls="navHudDrawer" title="Current chapter. Click to view all chapters">
+          <span class="nav-hud-pulse-dot" aria-hidden="true"></span>
+          <span class="nav-hud-chapter-num" id="navHudChapterNum">00</span>
+          <span class="nav-hud-separator">/</span>
+          <span class="nav-hud-chapter-name" id="navHudChapterName">Overview</span>
+          <svg class="nav-hud-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+        <div class="nav-hud-drawer" id="navHudDrawer" role="region" aria-label="Chapter quick jump menu">
+          <div class="nav-hud-drawer-header">
+            <span class="nav-hud-drawer-title">Chapters</span>
+            <span class="nav-hud-drawer-sub">[PROJECT_TITLE] Brand Identity</span>
+          </div>
+          <ul class="nav-hud-list">
+            <li><a href="#overview" class="nav-hud-item active" data-chapter="00"><span class="item-num">00</span> <span class="item-label">Overview & Brief</span></a></li>
+            <li><a href="#chapter-01" class="nav-hud-item" data-chapter="01"><span class="item-num">01</span> <span class="item-label">Primary Brandmark</span></a></li>
+            <li><a href="#chapter-02" class="nav-hud-item" data-chapter="02"><span class="item-num">02</span> <span class="item-label">Logo System</span></a></li>
+            <li><a href="#chapter-03" class="nav-hud-item" data-chapter="03"><span class="item-num">03</span> <span class="item-label">Color Palette</span></a></li>
+            <li><a href="#chapter-04" class="nav-hud-item" data-chapter="04"><span class="item-num">04</span> <span class="item-label">Type Specimen</span></a></li>
+            <li><a href="#chapter-05" class="nav-hud-item" data-chapter="05"><span class="item-num">05</span> <span class="item-label">Contrast & Guidelines</span></a></li>
+            <li><a href="#chapter-06" class="nav-hud-item" data-chapter="06"><span class="item-num">06</span> <span class="item-label">In-Context Application</span></a></li>
+            <li><a href="#chapter-07" class="nav-hud-item" data-chapter="07"><span class="item-num">07</span> <span class="item-label">Merchandise & Touchpoints</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

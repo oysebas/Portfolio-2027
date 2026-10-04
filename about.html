@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me, Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="Meet Sebastian Cueto, a Graphic and Visual Designer crafting intentional, high-impact brand and visual experiences at OYS Creative.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link active">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="about.html" class="nav-link active">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       About Page Content
+       ======================================================================== -->
+  <main class="about-page-wrapper">
+    <div class="about-page-container">
+
+      <!-- 1. Hero Bio Section (2-Column Split: Portrait & Biography) -->
+      <section class="about-hero-section reveal-on-scroll" aria-label="About Sebastian Cueto">
+        
+        <!-- Left: Portrait Media Box -->
+        <div class="about-portrait-card">
+          <img src="public/assets/images/Profile-Pic.jpg" alt="Sebastian Cueto, Graphic and Visual Designer" class="about-portrait-img" loading="eager" width="3098" height="4655">
+        </div>
+
+        <!-- Right: Bio Information Column -->
+        <div class="about-info-col">
+          <h1 class="about-heading">
+            I&#39;m Sebastian Cueto, a <span class="highlight-sage">Graphic and Visual Designer</span>
+          </h1>
+
+          <p class="about-bio-text">
+            I’m a designer who sees every layout as a conversion funnel. I believe aesthetics are only as powerful as the strategy behind them, which is why I specialize in removing friction and building trust through intentional user interface design. Whether it’s streamlining complex e-commerce workflows or engineering high-performance email campaigns, I help brands transform technical features into intuitive, user-centered experiences that drive immediate action.
+          </p>
+
+          <!-- Action CTA Buttons -->
+          <div class="about-cta-row">
+            <a href="contact.html" class="btn-coral-gradient">
+              <span>GET IN TOUCH</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </a>
+            <a href="projects.html" class="btn-glass-secondary">
+              <span>VIEW PORTFOLIO</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 2. "What I Do" Capabilities Section (3x2 Grid) -->
+      <section class="what-i-do-section reveal-on-scroll" aria-label="Capabilities &amp; Services">
+        
+        <!-- Section Header -->
+        <div class="what-i-do-header">
+          <h2 class="what-i-do-title">What I <span class="highlight-accent">Do</span></h2>
+        </div>
+
+        <!-- 6 Capabilities Cards Grid -->
+        <div class="capabilities-grid">
+
+          <!-- 01. UI/UX Design -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- Screen & Interface Wireframe Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+              </svg>
+            </div>
+            <h3 class="capability-title">UI/UX Design</h3>
+            <p class="capability-desc">
+              Creating digital experiences that are easy to use and smooth, helping users achieve their goals while also boosting our business results.
+            </p>
+          </div>
+
+          <!-- 02. Web Design -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- Responsive Web & Monitor Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="capability-title">Web Design</h3>
+            <p class="capability-desc">
+              Creating platforms that are super clear, easy to use, and fast, so you can easily move from knowing about your brand to making a sale.
+            </p>
+          </div>
+
+          <!-- 03. Email Design -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- Editorial Email & Newsletter Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="capability-title">Email Design</h3>
+            <p class="capability-desc">
+              Creating email systems that are not only fast and easy to use but also make sure the most important information is easy to find and read, so you can grab attention in just a few seconds.
+            </p>
+          </div>
+
+          <!-- 04. Brand Identity -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- Layered Identity System Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="capability-title">Brand Identity</h3>
+            <p class="capability-desc">
+              Creating visual languages that are both unified and professional, which will help gain immediate recognition in the market and build lasting trust with our customers.
+            </p>
+          </div>
+
+          <!-- 05. Ad Design -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- High-Conversion Performance Ads / Megaphone Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <h3 class="capability-title">Ad Design</h3>
+            <p class="capability-desc">
+              Creating marketing assets that really grab attention and make people want to stop scrolling by turning complicated technical details into feelings and things they can do.
+            </p>
+          </div>
+
+          <!-- 06. Conversion Strategy -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-icon-squircle" aria-hidden="true">
+              <!-- Conversion Funnel & Analytics Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+            </div>
+            <h3 class="capability-title">Conversion Strategy</h3>
+            <p class="capability-desc">
+              Using psychological triggers and tried-and-true UX ideas to make digital funnels even more effective, so every design choice is grounded in solid business reasoning.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian&#39;s Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

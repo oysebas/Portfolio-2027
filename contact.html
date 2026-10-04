@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact, OYS Creative | Sebastian Cueto</title>
+  <meta name="description" content="Get in touch with Sebastian Cueto at OYS Creative. Available for brand identity, UI/UX, ad design, and high-converting creative projects.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       Contact Section (Main Content)
+       ======================================================================== -->
+  <main class="contact-page-wrapper">
+    <section class="contact-section" id="contact" aria-label="Contact Sebastian Cueto">
+      <div class="contact-container">
+        <div class="contact-grid">
+          
+          <!-- Left Column: Studio Contact Details -->
+          <div class="contact-info-col">
+            
+            <div class="contact-header-block">
+              <!-- Heading -->
+              <h1 class="contact-heading">Get in touch.</h1>
+
+              <!-- Bio / Studio Description -->
+              <p class="contact-desc">
+                Have an upcoming project, brand challenge, or creative inquiry? Drop a line below or reach out directly. I respond to every inquiry within 24 hours.
+              </p>
+            </div>
+
+            <!-- 2 Tactile Contact Cards -->
+            <div class="contact-cards-list">
+              
+              <!-- Card 1: Email -->
+              <a href="mailto:sebcueto@gmail.com" class="contact-card" aria-label="Send email to sebcueto@gmail.com">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-card-info">
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-value">sebcueto@gmail.com</span>
+                  </div>
+                </div>
+                <div class="contact-card-arrow" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Card 2: Location -->
+              <a href="https://maps.google.com/?q=Florida,+USA" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Location: Florida, USA">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-card-info">
+                    <span class="contact-card-label">Location</span>
+                    <span class="contact-card-value">Florida, USA</span>
+                  </div>
+                </div>
+                <div class="contact-card-arrow" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form Card -->
+          <div class="contact-form-card">
+            <div class="contact-form-header">
+              <h2 class="contact-form-title">Send a message</h2>
+              <p class="contact-form-subtitle">Fill in the fields below and I will get back to you shortly.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/sebcueto@gmail.com" method="POST" novalidate>
+              
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="New Inquiry from Portfolio 2027">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" id="formSubmitNext" value="">
+              
+              <div class="contact-form-field">
+                <label for="contactName" class="contact-field-label">Your Name</label>
+                <input 
+                  type="text" 
+                  name="name" 
+                  id="contactName" 
+                  class="contact-input" 
+                  placeholder="e.g. Alex Morgan" 
+                  required 
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="contact-form-field">
+                <label for="contactEmail" class="contact-field-label">Email Address</label>
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="contactEmail" 
+                  class="contact-input" 
+                  placeholder="alex@company.com" 
+                  required 
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="contact-form-field message-field">
+                <label for="contactMessage" class="contact-field-label">Message</label>
+                <textarea 
+                  name="message" 
+                  id="contactMessage" 
+                  class="contact-textarea" 
+                  placeholder="Tell me about your project, timeline, or goals..." 
+                  rows="5" 
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-coral-gradient contact-submit-btn" id="contactSubmitBtn">
+                <span>SEND MESSAGE</span>
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 8h10M9 4l4 4-4 4"/>
+                </svg>
+              </button>
+
+              <div class="contact-form-status" id="contactStatus" role="alert"></div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

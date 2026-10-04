@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects, Sebastian Cueto | OYS Creative</title>
+  <meta name="description" content="Explore selected works across Branding, Ad Design, Web Design, and Email Design by Sebastian Cueto at OYS Creative.">
+  
+  <!-- Google Fonts: Hammersmith One & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">VIEW PORTFOLIO</a>
+  </div>
+
+  <!-- ========================================================================
+       Projects Showcase (Main Content)
+       ======================================================================== -->
+  <main class="projects-page-wrapper">
+    <div class="projects-page-container">
+      
+      <!-- Page Header & Intro -->
+      <header class="projects-page-header reveal-on-scroll">
+        <h1 class="projects-main-heading">My Projects</h1>
+        <p class="projects-main-desc">
+          A curated archive of high-conversion brand systems, performance ad creatives, digital user experiences, and editorial email designs.
+        </p>
+      </header>
+
+      <!-- Category Filter Tabs Bar -->
+      <nav class="projects-filter-bar reveal-on-scroll" role="tablist" aria-label="Filter projects by discipline">
+        <button class="projects-filter-btn active" role="tab" aria-selected="true" data-filter="all" id="tab-all" aria-controls="projects-gallery">
+          <span>All</span>
+          <span class="filter-count-badge">12</span>
+        </button>
+        <button class="projects-filter-btn" role="tab" aria-selected="false" data-filter="branding" id="tab-branding" aria-controls="projects-gallery">
+          <span>Branding</span>
+          <span class="filter-count-badge">5</span>
+        </button>
+        <button class="projects-filter-btn" role="tab" aria-selected="false" data-filter="ad-design" id="tab-ad-design" aria-controls="projects-gallery">
+          <span>Ad Design</span>
+          <span class="filter-count-badge">3</span>
+        </button>
+        <button class="projects-filter-btn" role="tab" aria-selected="false" data-filter="web-design" id="tab-web-design" aria-controls="projects-gallery">
+          <span>Web Design</span>
+          <span class="filter-count-badge">1</span>
+        </button>
+        <button class="projects-filter-btn" role="tab" aria-selected="false" data-filter="email-design" id="tab-email-design" aria-controls="projects-gallery">
+          <span>Email Design</span>
+          <span class="filter-count-badge">3</span>
+        </button>
+      </nav>
+
+      <!-- 3-Column Projects Gallery Grid -->
+      <div class="projects-gallery-grid" id="projects-gallery" role="region" aria-live="polite">
+
+        <!-- ===================================================================
+             BRANDING (5 Projects)
+             =================================================================== -->
+
+        <!-- Project 01: Edible Arrangements Redesign -->
+        <a href="edible.html" class="project-card" data-category="branding" aria-label="View Edible Arrangements Brand Redesign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/edible/Edible-Banner.jpg" alt="Edible Arrangements Brand Redesign" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Edible Arrangements Redesign</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Branding</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 02: Guard Pro -->
+        <a href="guardpro.html" class="project-card" data-category="branding" aria-label="View Guard Pro Brand Identity Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/Thumbnail-GuardPro.jpg" alt="Guard Pro Brand Identity" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Guard Pro</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Branding</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 03: Pixel Arcade -->
+        <a href="pixelarcade.html" class="project-card" data-category="branding" aria-label="View Pixel Arcade Brand Identity Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/pixelarcade/PA-thumbnail.jpg" alt="Pixel Arcade Brand Identity" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Pixel Arcade</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Branding</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 04: Solaro -->
+        <a href="solaro.html" class="project-card" data-category="branding" aria-label="View Solaro Brand Identity Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/solaro/SolaroBanner.jpg" alt="Solaro Brand Identity" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Solaro</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Branding</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 05: OYS Creative -->
+        <a href="oyscreative.html" class="project-card" data-category="branding">
+          <div class="project-card-media">
+            <img src="public/assets/projects/oyscreative/OYS-creative-banner.jpg" alt="OYS Creative Brand Identity" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">OYS Creative</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Branding</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- ===================================================================
+             AD DESIGN (3 Projects)
+             =================================================================== -->
+
+        <!-- Project 06: Less Tool. More Output. -->
+        <a href="linear.html" class="project-card" data-category="ad-design" aria-label="View Less Tool. More Output. Linear Ad Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/linear/LinearOrbit-Compirason-Ad.jpg" alt="Less Tool. More Output. Linear Static Ad" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Less Tool. More Output.</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Ad Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 07: The Smart Ring That Does It All -->
+        <a href="ouraring.html" class="project-card" data-category="ad-design" aria-label="View The Smart Ring That Does It All, Oura Ring Ad Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/ouraring/StaticAd-OuraRing.jpg" alt="The Smart Ring That Does It All, Oura Ring Static Ad" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">The Smart Ring That Does It All</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Ad Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 08: Noise Cancelling For Your Life -->
+        <a href="sony.html" class="project-card" data-category="ad-design" aria-label="View Noise Cancelling For Your Life, Sony WH-1000XM6 Ad Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/sony/Sony-WH-1000XM6-ad.jpg" alt="Noise Cancelling For Your Life, Sony WH-1000XM6 Static Ad" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Noise Cancelling For Your Life</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Ad Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- ===================================================================
+             WEB DESIGN (1 Project)
+             =================================================================== -->
+
+        <!-- Project 09: ShipTection Website Revamp -->
+        <a href="shiptection.html" class="project-card" data-category="web-design" aria-label="View ShipTection Website Revamp Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/shiptection-website-revamp.jpg" alt="ShipTection Website Revamp & UI Design" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">ShipTection Website Revamp</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Web Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- ===================================================================
+             EMAIL DESIGN (3 Projects)
+             =================================================================== -->
+
+        <!-- Project 10: Fellow Product Email Design -->
+        <a href="fellow.html" class="project-card" data-category="email-design" aria-label="View Fellow Product Email Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/fellow-email-design.jpg" alt="Fellow Product Email Design & Product Launch" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Fellow Product Email Design</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Email Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 11: iPhone 16e Email Design -->
+        <a href="iphone.html" class="project-card" data-category="email-design" aria-label="View iPhone 16e Email Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/2048-EmailDesign-AppleVersion.jpg" alt="iPhone 16e Email Design" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">iPhone 16e Email Design</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Email Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 12: Freeze Pipe Welcome Email Design -->
+        <a href="freezepipe.html" class="project-card" data-category="email-design" aria-label="View Freeze Pipe Welcome Email Campaign Case Study">
+          <div class="project-card-media">
+            <img src="public/assets/projects/New Welcome Flow thumbnail.jpeg" alt="Freeze Pipe Welcome Email Design" class="project-card-img" loading="lazy">
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Freeze Pipe Welcome Email Design</h3>
+            <div class="project-card-meta-row">
+              <span class="project-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span class="project-category-tag">Email Design</span>
+              </span>
+              <div class="project-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

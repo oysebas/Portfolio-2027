@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fellow, Product Launch Email Campaign | Email Design Case Study | Sebastian Cueto</title>
+  <meta name="description" content="High-conversion product launch email campaign for Fellow Stagg EKG Pro by Sebastian Cueto (OYS Creative). Modular Klaviyo architecture, boutique morning ritual storytelling, and conversion mechanics.">
+  
+  <!-- Typography (Mandatory Fonts: Hammersmith One & Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="public/assets/logos/oys-logo-mark.svg">
+</head>
+<body>
+
+  <!-- Editorial Scroll Progress Filament -->
+  <div class="scroll-progress-filament-track" aria-hidden="true">
+    <div class="scroll-progress-filament-bar" id="scrollProgressFilament"></div>
+  </div>
+
+  <!-- Atmospheric Background Canvas (Botanical Motes) -->
+  <canvas id="bg-canvas" class="background-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Floating Liquid Glass Header
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo Mark -->
+      <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+        <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
+      </a>
+
+      <!-- Center: Liquid Glass Nav Capsule -->
+      <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Coral Gradient CTA -->
+      <div class="nav-actions">
+        <a href="projects.html" class="btn-coral-gradient nav-cta-btn">
+          <span>VIEW PORTFOLIO</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="projects.html" class="btn-coral-gradient">
+      <span>VIEW PORTFOLIO</span>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       Main Case Study Content (Fellow Email Design Scrollytelling)
+       ======================================================================== -->
+  <main class="case-study-page-wrapper" id="main-content">
+    <div class="case-study-container">
+
+      <!-- Top Bar: Breadcrumb & Index Badge -->
+      <div class="case-study-top-bar reveal-on-scroll">
+        <a href="projects.html" class="btn-back-pill" aria-label="Return to Projects Gallery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Back to Projects</span>
+        </a>
+
+        <div class="case-study-tags-wrap">
+          <span class="case-study-index-pill">Project 01 of 03</span>
+          <span class="case-study-category-badge">Email Design</span>
+        </div>
+      </div>
+
+      <!-- Section 1: Hero Header (Kicker & Title) -->
+      <section class="email-campaign-hero reveal-on-scroll" id="overview">
+        
+        <!-- Category Pill Badge -->
+        <span class="ad-kicker-badge">
+          <span class="ad-pulse-dot" aria-hidden="true"></span>
+          EMAIL CAMPAIGN // PRODUCT LAUNCH
+        </span>
+
+        <!-- Display Headline -->
+        <h1 class="email-campaign-title">
+          Fellow Product<br>Email Campaign
+        </h1>
+
+      </section>
+
+      <!-- Section 2: Two-Column Showcase (Left: Story & Highlights with Scroll Animation; Right: Full Static Email) -->
+      <section class="email-showcase-section" id="showcase">
+        <div class="email-showcase-grid">
+
+          <!-- Left Column: Storyline & Highlights with Scrolling Animation -->
+          <div class="email-story-col" role="region" aria-label="Strategy & Highlights">
+
+            <div class="email-cards-stream">
+
+              <!-- Card 01: The Challenge -->
+              <article class="email-story-card is-active" data-card-idx="0" tabindex="0" role="button" aria-label="View The Challenge details">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">Strategy &amp; Context</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h2 class="email-card-heading">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  The Challenge
+                </h2>
+                <p class="email-card-body">
+                  The challenge was translating Fellow's design-forward, boutique aesthetic into a conversion-focused email experience. High-end coffee gear relies heavily on tactile appeal and minimalist craft, where breathing room is crucial. I had to showcase multiple hardware features (PID temp control, gooseneck flow rate, counterbalance grip) and customizable finishes without crowding the layout or causing recipient drop-off.
+                </p>
+              </article>
+
+              <!-- Card 02: The Goal -->
+              <article class="email-story-card" data-card-idx="1" tabindex="0" role="button" aria-label="View The Goal details">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">Objective &amp; Vision</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h2 class="email-card-heading">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="12 6 15 11 20 11 16 14 18 19 12 16 6 19 8 14 4 11 9 11 12 6"></polygon>
+                  </svg>
+                  The Goal
+                </h2>
+                <p class="email-card-body">
+                  My goal was to create an editorial Brew Bar Feature Map that introduces the Stagg EKG Pro as an elevated "morning ritual" hook. A modular tier system allows coffee enthusiasts to scan precision technical specs, preview countertop finishes, and explore complementary gear seamlessly. Success is defined by a smooth transition from lifestyle awareness ("Master the Pour") to direct action ("Upgrade Your Setup" and "Customize &amp; Order").
+                </p>
+              </article>
+
+              <!-- Section Divider: Design Highlights Header -->
+              <div class="email-stream-divider" aria-hidden="true">
+                <div class="stream-divider-content">
+                  <span class="email-kicker-tag">6 Core Pillars</span>
+                  <h3 class="stream-divider-title">Design Highlights</h3>
+                </div>
+              </div>
+
+              <!-- Highlight 01: Mobile First -->
+              <article class="email-story-card email-highlight-card" data-card-idx="2" tabindex="0" role="button" aria-label="Design Highlight 01: Mobile First">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">01 / Hierarchy</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Mobile First</h3>
+                <p class="email-card-body">
+                  Optimized with a fluid, vertical column hierarchy to ensure a seamless reading and tapping experience on mobile screens, where morning email checks take place.
+                </p>
+              </article>
+
+              <!-- Highlight 02: Brand Consistency -->
+              <article class="email-story-card email-highlight-card" data-card-idx="3" tabindex="0" role="button" aria-label="Design Highlight 02: Brand Consistency">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">02 / Aesthetic</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Brand Consistency</h3>
+                <p class="email-card-body">
+                  Mirrors Fellow's signature boutique aesthetic by pairing warm oatmeal canvas neutrals with obsidian contrast and generous white space to give off a modern kitchen vibe.
+                </p>
+              </article>
+
+              <!-- Highlight 03: Visual Readability -->
+              <article class="email-story-card email-highlight-card" data-card-idx="4" tabindex="0" role="button" aria-label="Design Highlight 03: Visual Readability">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">03 / Information Architecture</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Visual Readability</h3>
+                <p class="email-card-body">
+                  By pairing custom minimalist line iconography with an organized 3-column spec matrix, we make nuanced brewing mechanics effortless to digest at a quick glance.
+                </p>
+              </article>
+
+              <!-- Highlight 04: Responsive Rendering -->
+              <article class="email-story-card email-highlight-card" data-card-idx="5" tabindex="0" role="button" aria-label="Design Highlight 04: Responsive Rendering">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">04 / Interaction</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Responsive Rendering</h3>
+                <p class="email-card-body">
+                  Features an interactive colorway swatch component that lets users preview custom hardware finishes directly within the email before navigating to checkout.
+                </p>
+              </article>
+
+              <!-- Highlight 05: Focused CTA -->
+              <article class="email-story-card email-highlight-card" data-card-idx="6" tabindex="0" role="button" aria-label="Design Highlight 05: Focused CTA">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">05 / Conversion</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Focused CTA</h3>
+                <p class="email-card-body">
+                  By placing high-contrast action buttons at natural intent moments, we guide the user smoothly from hero discovery through social proof directly to conversion.
+                </p>
+              </article>
+
+              <!-- Highlight 06: Fast Loading -->
+              <article class="email-story-card email-highlight-card" data-card-idx="7" tabindex="0" role="button" aria-label="Design Highlight 06: Fast Loading">
+                <div class="email-card-kicker">
+                  <span class="email-kicker-tag">06 / Performance</span>
+                  <span class="email-card-pulse-dot" aria-hidden="true"></span>
+                </div>
+                <h3 class="email-card-heading">Fast Loading</h3>
+                <p class="email-card-body">
+                  By using retina-ready, compressed asset exports, the layout renders instantly and remains pixel-perfect across Apple Mail, Gmail, and Outlook clients.
+                </p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Static Full Email Showcase -->
+          <div class="email-preview-col" aria-label="Fellow Product Email Full Master Design">
+            <div class="email-full-card">
+              <img 
+                src="public/assets/projects/fellow/FellowProduct-EmailDesign.jpg" 
+                alt="Full-length Fellow Stagg EKG Pro Product Launch Email Template Design" 
+                class="email-full-image"
+                loading="eager"
+                width="1200"
+                height="5748"
+              >
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Sebastian's Portfolio)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <h3 class="footer-title">Sebastian's Portfolio</h3>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social-links" aria-label="Social media links">
+        <a href="https://www.instagram.com/oyssebas/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+          <img src="public/assets/icons/InstagramLogo-Icon.svg" alt="Instagram" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.linkedin.com/in/sebastian-cueto-9898b11aa/" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+          <img src="public/assets/icons/LinkedInLogo-Icon.svg" alt="LinkedIn" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.threads.net/@oy_sebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Threads">
+          <img src="public/assets/icons/ThreadsLogo-Icon.svg" alt="Threads" class="footer-social-icon" width="38" height="38">
+        </a>
+        <a href="https://www.tiktok.com/@oyssebas" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="TikTok">
+          <img src="public/assets/icons/TikTokLogo-Icon.svg" alt="TikTok" class="footer-social-icon" width="38" height="38">
+        </a>
+      </div>
+
+      <!-- Copyright / Rights Line -->
+      <p class="footer-copy">© 2026 by <a href="#" class="footer-author-link">Sebastian Cueto</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
