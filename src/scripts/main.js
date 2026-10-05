@@ -877,7 +877,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = '<span>Sending...</span>';
       }
 
-      // Native browser form submission proceeds to https://formsubmit.co/sebcueto@gmail.com
+      // Native browser form submission proceeds to https://formsubmit.co/dc1ecc9b580c2d05d0783a7e15205d6c
     });
   }
 
