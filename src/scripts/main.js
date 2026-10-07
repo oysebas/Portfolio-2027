@@ -14,7 +14,7 @@ if (typeof customElements !== 'undefined') {
           this.innerHTML = `
 <header class="site-header" role="banner">
   <div class="nav-container">
-    <a href="index.html" class="nav-brand" aria-label="OYS Creative Home">
+    <a href="/" class="nav-brand" aria-label="OYS Creative Home">
       <img src="src/assets/logos/oys-logo-mark.svg" alt="OYS Creative Mark" class="brand-logo-img">
     </a>
     <nav class="nav-glass-capsule" role="navigation" aria-label="Main Navigation">
@@ -367,8 +367,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Clean URL: Seamlessly strip /index.html from the browser address bar
+  if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
+    const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') || '/';
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+  }
+
   // 3. Active Nav Link via Multi-Page URL Matching
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPath = window.location.pathname.split('/').pop() || '';
   const isHomePage = currentPath === '' || currentPath === 'index.html';
 
   navLinks.forEach(link => {
@@ -376,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkFile = href.split('#')[0].split('?')[0].split('/').pop();
     if (!isHomePage && linkFile && linkFile === currentPath) {
       link.classList.add('active');
-    } else if (isHomePage && (href === 'index.html' || href === './')) {
+    } else if (isHomePage && (href === '/' || href === 'index.html' || href === './')) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -393,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!hash) return;
 
       const targetElement = document.getElementById(hash);
-      const isTargetOnCurrentPage = (!path || path === '' || path === currentPath || (isHomePage && path === 'index.html'));
+      const isTargetOnCurrentPage = (!path || path === '' || path === '/' || path === currentPath || (isHomePage && (path === 'index.html' || path === '/')));
 
       if (isTargetOnCurrentPage && targetElement) {
         e.preventDefault();
@@ -417,9 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        if (window.location.hash) {
-          history.pushState(null, '', window.location.pathname);
-        }
+        window.history.replaceState(null, '', '/');
       }
     });
   });
