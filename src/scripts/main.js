@@ -367,22 +367,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Clean URL: Seamlessly strip /index.html from the browser address bar
+  // Clean URLs: Seamlessly strip .html from all page URLs in the browser address bar
   if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
     const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') || '/';
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+  } else if (window.location.pathname.endsWith('.html')) {
+    const cleanPath = window.location.pathname.replace(/\.html$/, '');
     window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
   }
 
   // 3. Active Nav Link via Multi-Page URL Matching
-  const currentPath = window.location.pathname.split('/').pop() || '';
-  const isHomePage = currentPath === '' || currentPath === 'index.html';
+  const rawPath = window.location.pathname.split('/').pop() || '';
+  const currentPath = rawPath.replace(/\.html$/, '');
+  const isHomePage = currentPath === '' || currentPath === 'index';
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href') || '';
-    const linkFile = href.split('#')[0].split('?')[0].split('/').pop();
+    const rawFile = href.split('#')[0].split('?')[0].split('/').pop() || '';
+    const linkFile = rawFile.replace(/\.html$/, '');
     if (!isHomePage && linkFile && linkFile === currentPath) {
       link.classList.add('active');
-    } else if (isHomePage && (href === '/' || href === 'index.html' || href === './')) {
+    } else if (isHomePage && (href === '/' || href === 'index.html' || href === './' || linkFile === 'index' || linkFile === '')) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -841,7 +846,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statusEl.className = 'contact-form-status success';
         statusEl.style.display = 'block';
       }
-      history.replaceState(null, '', window.location.pathname);
+      history.replaceState(null, '', window.location.pathname.replace(/\.html$/, ''));
     }
 
     contactForm.addEventListener('submit', (e) => {
