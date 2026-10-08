@@ -6,3 +6,8 @@
 
 # Temporary files & logs
 *.log
+
+# Tooling and local skills
+.codex/
+.agents/skills/
+

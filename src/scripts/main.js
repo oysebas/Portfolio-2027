@@ -568,10 +568,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const scrolled = -rect.top;
       const progress = Math.min(Math.max(scrolled / scrollableDistance, 0), 1);
 
-      // Progress bar fill width (at least 15% when at the start so it is always visible)
+      // Progress bar fill scale (at least 0.15 when at the start so it is always visible)
       if (progressBar) {
-        const barWidth = 15 + progress * 85;
-        progressBar.style.width = `${barWidth}%`;
+        const barScale = 0.15 + progress * 0.85;
+        progressBar.style.transform = `scaleX(${barScale.toFixed(3)})`;
       }
 
       // Map progress to card index [0..totalCards - 1]
@@ -1060,7 +1060,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Update Filament Bar (Fallback only if browser doesn't natively support scroll-driven timeline)
       if (filament && !window.CSS?.supports?.('animation-timeline', 'scroll()')) {
-        filament.style.width = `${(progress * 100).toFixed(2)}%`;
+        filament.style.transform = `scaleX(${progress.toFixed(4)})`;
       }
 
       // 2. HUD Visibility
